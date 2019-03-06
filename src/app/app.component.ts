@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SearchService } from './search.service';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'aligatorObservable';
+  results: Object;
+  searchTerm$ = new Subject<string>();
+
+  constructor(private searchService: SearchService) {
+    this.searchService.search(this.searchTerm$)
+    .subscribe(results => {
+      this.results = results.results;
+    });
+  }
 }
