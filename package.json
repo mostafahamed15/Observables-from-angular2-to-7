@@ -25,13 +25,13 @@
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular-devkit/build-angular": "^0.13.0",
     "@angular/cli": "~7.3.3",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
@@ -44,5 +44,22 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
+  },
+  "resolutions": {
+    "npm-registry-fetch": "^4.0.5",
+    "websocket-extensions": "^0.1.4",
+    "https-proxy-agent": "^2.2.3",
+    "minimist": "^1.2.3",
+    "acorn": "^6.4.1",
+    "kind-of": "^6.0.3",
+    "serialize-javascript": "^2.1.1",
+    "set-value": "^2.0.1",
+    "mixin-deep": "^1.3.2",
+    "lodash": "^4.17.19",
+    "lodash.mergewith": "^4.6.2",
+    "js-yaml": "^3.13.1",
+    "handlebars": "^4.3.0",
+    "fstream": "^1.0.12",
+    "tar": "^2.2.2"
   }
 }

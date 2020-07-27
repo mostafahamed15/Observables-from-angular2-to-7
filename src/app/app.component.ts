@@ -14,7 +14,7 @@ export class AppComponent {
   constructor(private searchService: SearchService) {
     this.searchService.search(this.searchTerm$)
     .subscribe(results => {
-      this.results = results.results;
+      this.results = results;
     });
   }
 }
